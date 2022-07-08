@@ -18,3 +18,9 @@
 .ltr{direction: ltr;}
 .pointer{cursor: pointer;}
 .link{text-decoration: none; transition: 1s;}
+
+/* scroll bar */
+::-webkit-scrollbar{width: 3px;}
+
+::-webkit-scrollbar-thumb{background-color: #112B3C; border-radius: 50px;} 
+/* scroll bar */

@@ -1,7 +1,9 @@
 <template>
   <div class="app">
     <navigationbar/>
-    <router-view/>
+    <div class="app-router bg-dark scrollbar">
+       <router-view/>
+    </div>
   </div>
 </template>
 
@@ -12,6 +14,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped >
+.app-router{width: 100%; height: 95vh; overflow: scroll;}
 </style>
