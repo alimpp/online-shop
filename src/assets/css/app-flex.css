@@ -1,0 +1,5 @@
+.app-flex{display: flex;}
+.app-flex-wrap{display: flex; flex-wrap: wrap;}
+.app-flex-column{display: flex; flex-direction: column;}
+.app-flex-justify-content{display: flex;justify-content: center;}
+.app-flex-align-items{display: flex;align-items: center;}
