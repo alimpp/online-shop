@@ -1,16 +1,13 @@
 <template>
   <div class="home">
-    <div class="container">
-
-      
-
-    </div>
+    <dataHome/>
   </div>
 </template>
 
 <script>
+import dataHome from '../components/dataComponent/dataHome.vue'
 export default {
-  
+  components : {dataHome}
 }
 </script>
 
