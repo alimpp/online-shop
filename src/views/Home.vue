@@ -1,12 +1,16 @@
 <template>
   <div class="home">
-    <h1>home</h1>
+    <div class="container">
+
+      
+
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  
 }
 </script>
 

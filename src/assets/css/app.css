@@ -21,6 +21,35 @@
 
 /* scroll bar */
 ::-webkit-scrollbar{width: 3px;}
-
 ::-webkit-scrollbar-thumb{background-color: #112B3C; border-radius: 50px;} 
 /* scroll bar */
+
+/* card */
+.app-cart{width: 360px; display: flex;border-radius: 15px; overflow: hidden;}
+.app-cart-img{width: 180px; height: 200px;}
+.app-img-cart{width: 100%; height: 200px;}
+.app-cart-text{width: 180px; height: 200px; display: flex; flex-direction: column;background: #303030;}
+
+/* html template */
+      /* <div class="app-flex-wrap app-flex-justify-content"  style="width:100%;">
+
+        <div class="app-cart my-2 mx-2" v-for="test in tests" :key="test.id">
+          <div class="app-cart-img">
+           <img :src="test.img" class="app-img-cart" alt="error">
+          </div>
+          <div class="app-cart-text px-3 app-flex-justify-content">
+            <span class="app-text-size-y app-light-color">Nike Sport</span>
+            <span class="app-text-size-y app-gray-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit</span>
+            <span class="app-text-size-z app-gray-color">2000$</span>
+            <div>
+              <button class="app-btn-blue mt-2">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div> */
+/* html template */
+
+/* card */
+
+
