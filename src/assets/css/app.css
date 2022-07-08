@@ -17,3 +17,4 @@
 .rtl{direction: rtl;}
 .ltr{direction: ltr;}
 .pointer{cursor: pointer;}
+.link{text-decoration: none; transition: 1s;}
