@@ -6,7 +6,7 @@ import tshirt from '../views/tshirts'
 import hats from '../views/hats'
 import pants from '../views/pants'
 import sports from '../views/sports'
-import buyBasket from '../views/buyBasket'
+import cart from '../views/cart'
 const routes = [
   {
     path: '/',
@@ -44,9 +44,9 @@ const routes = [
     component: sports
   },
   {
-    path: '/buyBasket',
-    name: 'buyBasket',
-    component: buyBasket
+    path: '/cart',
+    name: 'cart',
+    component: cart
   },
 ]
 

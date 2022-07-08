@@ -2,7 +2,7 @@
   <div class="navigationbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" style="color:blue;">Online Shop</a>
+    <a class="navbar-brand" style="color:#A084CF;">ONLINE SHOP</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <i class="bi bi-list app-light-color app-text-size-b"></i>
     </button>
@@ -30,7 +30,7 @@
           <router-link to="/sports" class="link mx-2 py-1 app-light-color">Sports</router-link>
         </li>
          <li class="nav-item">
-          <router-link to="/buybasket" class="link mx-2 py-1 app-light-color"><i class="bi bi-bag-plus-fill"></i></router-link>
+          <router-link to="/cart" class="link mx-2 py-1 app-light-color"><i class="bi bi-bag-plus-fill"></i></router-link>
         </li>
       </ul>
     </div>
