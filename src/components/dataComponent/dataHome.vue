@@ -1,6 +1,6 @@
 <template>
   <div class="dataHome">
-    <div class="container">
+    <div class="container opa-anim">
         <div class="row" style="height:100vh;">
             <div class="col-lg-6 my-3 app-flex-column app-flex-justify-content">
                 <span class="app-blue-color app-text-size-x">Welocome To My Online Shop</span>
@@ -61,7 +61,7 @@
                 <img style="width:100%; height:400px;border-radius:10px;" src="https://img.pixers.pics/pho_wat(s3:700/FO/39/97/85/42/700_FO39978542_3d72ac6bb2914f4a63330ef93bb4b186.jpg,700,504,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,454,jpg)/wall-murals-central-london-vector-map.jpg.jpg" alt="Error">
             </div>
             <div class="col-lg-6 app-flex-column mt-3">
-                <span class="app-text-size-x app-light-color">You Can Send The Ticket...</span>
+                <span class="app-text-size-z app-light-color">You Can Send The Ticket...</span>
                 <input type="text" class="ticket" placeholder="Your Name">
                 <input type="text" class="ticket" placeholder="Email">
                 <textarea rows="5" class="ticket-message" placeholder="Message"></textarea>
