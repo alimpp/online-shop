@@ -28,7 +28,7 @@ export default {
     border-radius: 2px;
     width: 290px;
     height: 28px;
-    animation: 3s loading-anim;
+    animation: 2s loading-anim;
 }
 .loading-anim-text{animation: 0.5s loading-anim-text infinite;}
 @keyframes loading-anim {

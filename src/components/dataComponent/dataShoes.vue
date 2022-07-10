@@ -37,7 +37,7 @@ export default {
      this.loading = true 
      setTimeout( () => {
         this.loading = false
-     } , 3000)
+     } , 2000)
    } ,
    components : {loading} ,
    computed : {
