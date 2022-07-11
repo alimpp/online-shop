@@ -12,7 +12,7 @@
           <router-link to="/" class="link mx-2 py-1 app-light-color">Home</router-link>
         </li>
          <li class="nav-item">
-          <router-link to="/shoes" class="link mx-2 py-1 app-light-color">shoes</router-link>
+          <router-link to="/shoes" class="link mx-2 py-1 app-light-color">Shoes</router-link>
         </li>
          <li class="nav-item">
           <router-link to="/jackets" class="link mx-2 py-1 app-light-color">Jackets</router-link>
