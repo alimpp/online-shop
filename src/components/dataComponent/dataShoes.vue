@@ -18,7 +18,7 @@
                     <span class="app-text-size-x app-light-color">{{data.price}} $</span>
                   </router-link>
                     <div> 
-                    <button class="app-btn-blue mt-2">Add To Cart</button>
+                    <button class="app-btn-blue mt-2" @click="addToCart(data)">Add To Cart</button>
                     </div>
                 </div>
        
@@ -47,6 +47,11 @@ export default {
     getShoes(){
         return this.$store.getters['ShoesStore/getShoes']
     }
+   } , 
+   methods : {
+      addToCart(data){
+         return this.$store.dispatch('CartStore/addToCart' , data)
+      }
    }
 }
 </script>
