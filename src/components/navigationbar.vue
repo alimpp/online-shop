@@ -31,6 +31,7 @@
         </li>
          <li class="nav-item">
           <router-link to="/cart" class="link mx-2 py-1 app-light-color"><i class="bi bi-bag-plus-fill"></i></router-link>
+          <span class="badge app-red-bg">{{getCount}}</span>
         </li>
       </ul>
     </div>
@@ -41,7 +42,11 @@
 
 <script>
 export default {
-  
+  computed : {
+    getCount(){
+      return this.$store.getters['CartStore/getCount']
+    }
+  }
 }
 </script>
 

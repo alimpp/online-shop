@@ -16,6 +16,11 @@ const CartStore = {
         getCount(state){
             return state.cart.length
         } , 
+        totalPrice(state){
+            return state.cart.reduce((total , product) => {
+                return total + product.price * product.quantity
+            } , 0)
+        }
     },
     mutations: {
         updateCart(state , data){
@@ -30,6 +35,39 @@ const CartStore = {
             }
             updateLocalStorage(state.cart)
         } ,
+        clearCart(state){
+            localStorage.removeItem('cart')
+            Swal.fire({
+                position: 'top',
+                icon: 'warning',
+                title: 'Cart Clear',
+                showConfirmButton: false,
+                timerProgressBar : true , 
+                toast : true , 
+                timer: 1000
+            })
+            return state.cart = []
+        } ,
+        incrementQuantity(state , id){
+            const item = state.cart.find(product => product.id == id)
+            if(item){
+                item.quantity++
+            }
+            updateLocalStorage(state.cart)
+        } , 
+        decrementQuantity(state , id){
+            const item = state.cart.find(product => product.id == id)
+            if(item){
+                if(item.quantity > 1){
+                    item.quantity--
+                }
+            }
+            updateLocalStorage(state.cart)
+        } , 
+        deleteItem(state , id){
+            state.cart = state.cart.filter(cart => cart.id != id)
+            updateLocalStorage(state.cart)
+        }
     },
     actions: {
         addToCart({commit} , data){
@@ -37,13 +75,49 @@ const CartStore = {
           Swal.fire({
             position: 'top',
             icon: 'success',
-            title: 'Product Added',
+            title: 'Shoes Added',
             showConfirmButton: false,
             timerProgressBar : true , 
             toast : true , 
             timer: 1000
          })
-        }
+        } ,
+        increment({commit} , id){
+            commit('incrementQuantity' , id)
+            Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: 'Product Updated',
+                showConfirmButton: false,
+                timerProgressBar : true , 
+                toast : true , 
+                timer: 1000
+            })
+       } , 
+       decrement({commit} , id){
+            commit('decrementQuantity' , id)
+            Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: 'Product Updated',
+                showConfirmButton: false,
+                timerProgressBar : true , 
+                toast : true , 
+                timer: 1000
+            })
+       } , 
+       delete({commit} , id){
+            commit('deleteItem' , id)
+            Swal.fire({
+                position: 'top',
+                icon: 'warning',
+                title: 'Product Deleted',
+                showConfirmButton: false,
+                timerProgressBar : true , 
+                toast : true , 
+                timer: 1000
+            })
+       }
     },
 }
 
