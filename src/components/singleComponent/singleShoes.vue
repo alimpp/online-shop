@@ -20,7 +20,7 @@
             <i class="bi bi-star-fill" style="color:yellow;"></i>
           </div>
           <div>
-            <button class="app-btn-blue mt-2">Add To Cart</button>
+            <button class="app-btn-blue mt-2" @click="addToCart(singleShoes)">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -61,6 +61,9 @@ export default {
       comment(){
         this.comments = true 
         this.description = false
+      } , 
+      addToCart(id){
+        return this.$store.dispatch('CartStore/addToCart' , id)
       }
     }
 }

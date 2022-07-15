@@ -4,8 +4,8 @@
 .app-btn-blue{background: #3330E4; padding: 5px 10px; border-radius: 4px; border: none; outline: none; color: #fafafa; transition: 0.5s; cursor: pointer;}
 .app-btn-blue:hover{background: #fafafa; color: #303030;}
 
-.app-btn-red{background: #F32424; padding: 5px 10px; border-radius: 4px; border: none; outline: none; color: #fafafa; transition: 0.5s; cursor: pointer;}
-.app-btn-red:hover{background: none; border: 1px solid #F32424; color: #F32424;}
+.app-btn-red{background: #aa2828; padding: 5px 10px; border-radius: 4px; border: none; outline: none; color: #fafafa; transition: 0.5s; cursor: pointer;}
+.app-btn-red:hover{background: none; border: 1px solid #aa2828; color: #aa2828;}
 
 .app-btn-gray{background: #909090; padding:50px 10px; border-radius: 4px; border: none; outline: none; transition: 0.5s; cursor: pointer;}
 .app-btn-gray:hover{background-color: none; border: 1px solid #909090; color: #909090;}

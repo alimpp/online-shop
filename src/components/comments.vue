@@ -2,10 +2,13 @@
   <div class="comments app-flex-column px-5 opa-anim">
      <div class="app-flex-column pb-3" v-for="comment in comments" :key="comment.id" style="border-bottom:1px solid #fafafa;">
        <div class="d-flex my-2">
-        <img :src="comment.image" alt="Error" style="width:50px; height:50px; border-radius:50%;"> 
-        <span class="app-text-size-y app-light-color pt-3 px-2">{{comment.user}}</span>
+        <img :src="comment.image" alt="Error" style="width:50px; height:48px; border-radius:50%;"> 
+        <div class="app-flex-column">
+          <span class="app-text-size-y app-light-color px-2">{{comment.user}}</span>
+          <span class="app-text-size-y app-light-color px-2">{{comment.commnet}}</span>
+        </div>
        </div>
-        <span class="app-text-size-y app-light-color">{{comment.commnet}}</span>
+        
      </div>
   </div>
 </template>
@@ -24,7 +27,7 @@ export default {
                {user : "Richard" , image : "https://images.unsplash.com/photo-1621577979731-ffeb2dc1c25f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2xhc2Vzc3xlbnwwfHwwfHw%3D&w=1000&q=80" , commnet : "is Best i Like product"} , 
             ]
         }
-    }
+    } , 
 }
 </script>
 
