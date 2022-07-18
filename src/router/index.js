@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import home from '../views/home'
 import shoes from '../views/shoes'
 import jackets from '../views/jackets'
-import tshirt from '../views/tshirts'
 import hats from '../views/hats'
 import pants from '../views/pants'
 import sports from '../views/sports'
@@ -34,11 +33,6 @@ const routes = [
     path: '/jackets/:id',
     name: 'singleJacket',
     component: singleJacket
-  },
-  {
-    path: '/tshirt',
-    name: 'tshirt',
-    component: tshirt
   },
   {
     path: '/hats',

@@ -18,9 +18,6 @@
           <router-link to="/jackets" class="link mx-2 py-1 app-light-color">Jackets</router-link>
         </li>
          <li class="nav-item">
-          <router-link to="/tshirt" class="link mx-2 py-1 app-light-color">T-Shirt</router-link>
-        </li>
-         <li class="nav-item">
           <router-link to="/hats" class="link mx-2 py-1 app-light-color">Hats</router-link>
         </li>
          <li class="nav-item">

@@ -4,7 +4,7 @@ const JacketsStore = {
         jackets : [
             {id : 21 , name : 'male black jacket' , image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwnkkNc-ZmQK8TQIZo4GdXR-lnbShCaU9k8zzOyZBCcB1TrN-PS4JcowMcuoA-fI2njI&usqp=CAU' , size : '43 44 45' , price : '2000'},
             {id : 22 , name : 'black bomber' , image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwxLteD8kvEwlCWCoHm0YIiEUWLLxWC9_o7shjmm1tBvxYhZi-RaiqHkCRedbOmVMKbQ&usqp=CAU' , size : '43 44 45 46' , price : '1000'},
-            {id : 23 , name : 'blue jacket' , image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwxLteD8kvEwlCWCoHm0YIiEUWLLxWC9_o7shjmm1tBvxYhZi-RaiqHkCRedbOmVMKbQ&usqp=CAU' , size : '43 44 45' , price : '1550'},
+            {id : 23 , name : 'black jacket' , image : 'https://m.media-amazon.com/images/I/910yzuZklGL._AC_UL480_QL65_.jpg' , size : '43 44 45' , price : '1550'},
             {id : 24 , name : 'blue jacket' , image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnYaoqsNsVyV7cv3V28IgMDVtTdjkNK-5NndXtgCEHUjWVGzyA5E4ogT6SihADIfhp78&usqp=CAU' , size : '41 42 43 44 45' , price : '2500'},
             {id : 25 , name : 'panda model men' , image : 'https://www.prada.com/content/dam/pradanux_products/2/29X/29X956/1ZT6F0002/29X956_1ZT6_F0002_S_212_SLF.png/jcr:content/renditions/cq5dam.web.hebebed.500.500.jpg' , size : '40 41 42 43 44 45' , price : '1200'},
             {id : 26 , name : 'prada men' , image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmROn9pmzN40mhLKXOok9wsa4p3qqSub_cnjbAmP1rRZx9JWD-NlNaO5qxkwMhiiJVuhE&usqp=CAU' , size : '43 44 45' , price : '3000'},
