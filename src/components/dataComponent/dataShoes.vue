@@ -45,7 +45,7 @@ export default {
    components : {loading} ,
    computed : {
     getShoes(){
-        return this.$store.getters['ShoesStore/getShoes']
+        return this.$store.getters['ShoesStore/getData']
     }
    } , 
    methods : {

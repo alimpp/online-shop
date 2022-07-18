@@ -50,7 +50,7 @@ export default {
       }
     } , 
     mounted(){
-      this.shoes = this.$store.getters['ShoesStore/getShoes']
+      this.shoes = this.$store.getters['ShoesStore/getData']
       this.singleShoes = this.shoes.find(s => s.id == this.$route.params.id)
     } , 
     methods : {

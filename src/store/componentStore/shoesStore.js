@@ -25,7 +25,7 @@ const ShoesStore = {
         ]
     },
     getters: {
-        getShoes(state){
+        getData(state){
             return state.shoes
         }
     },
