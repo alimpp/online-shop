@@ -75,7 +75,7 @@ const CartStore = {
           Swal.fire({
             position: 'top',
             icon: 'success',
-            title: 'Shoes Added',
+            title: 'Product Added',
             showConfirmButton: false,
             timerProgressBar : true , 
             toast : true , 
