@@ -13,9 +13,14 @@
                   <router-link :to="`/shoes/${data.id}`" class="app-flex-column link">
                     <span class="app-text-size-y app-light-color">Product Name :</span>
                     <span class="app-text-size-y app-light-color">{{data.name}}</span>
-                    <span class="app-text-size-y app-light-color">Size :</span>
-                    <span class="app-text-size-y app-light-color">{{data.size}}</span>
                     <span class="app-text-size-x app-light-color">{{data.price}} $</span>
+                      <div class="d-flex">
+                        <i class="bi bi-star-fill" style="color:yellow;"></i>
+                        <i class="bi bi-star-fill" style="color:yellow;"></i>
+                        <i class="bi bi-star-fill" style="color:yellow;"></i>
+                        <i class="bi bi-star-fill" style="color:yellow;"></i>
+                        <i class="bi bi-star-fill" style="color:yellow;"></i>
+                      </div>
                   </router-link>
                     <div> 
                     <button class="app-btn-blue mt-2" @click="addToCart(data)">Add To Cart</button>
