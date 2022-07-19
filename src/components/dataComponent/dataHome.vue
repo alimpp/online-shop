@@ -62,11 +62,11 @@
             </div>
             <div class="col-lg-6 app-flex-column mt-3">
                 <span class="app-text-size-z app-light-color">You Can Send The Ticket...</span>
-                <input type="text" class="ticket" placeholder="Your Name">
-                <input type="text" class="ticket" placeholder="Email">
-                <textarea rows="5" class="ticket-message" placeholder="Message"></textarea>
+                <input type="text" class="ticket" placeholder="Your Name" v-model="name">
+                <input type="text" class="ticket" placeholder="Email" v-model="email">
+                <textarea rows="5" class="ticket-message" placeholder="Message" v-model="message"></textarea>
                 <div>
-                    <button class="app-btn-blue">Send Ticket</button>
+                    <button class="app-btn-blue" @click="send">Send Ticket</button>
                 </div>
             </div>
         </div>
@@ -77,7 +77,15 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2'
 export default {
+   data(){
+     return{
+        name : '' , 
+        email : '' ,
+        message : ''
+     }
+   } ,
    methods : {
     started(){
        const elem = this.$refs.started
@@ -95,6 +103,18 @@ export default {
         const elem = this.$refs.about 
         elem.scrollIntoView()
     } ,
+    send(){
+        this.name = '' , 
+        this.email = '' ,
+        this.message = '' , 
+        Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Thanks For Ticket',
+        showConfirmButton: false,
+        timer: 1000
+        })
+    }
    }
 }
 </script>
