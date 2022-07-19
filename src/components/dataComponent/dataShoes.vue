@@ -3,7 +3,7 @@
      <div class="container">
         <loading v-if="loading"/>
         <div v-else class="app-flex-wrap app-flex-justify-content opa-anim"  style="width:100%;">
-        <div class="app-cart my-2 mx-2 pointer" v-for="data in getShoes" :key="data.id">
+        <div class="app-cart my-2 mx-2 pointer" v-for="data in dataSource" :key="data.id">
            <router-link :to="`/shoes/${data.id}`" class="app-flex-justify-content link">
                 <div class="app-cart-img">
                 <img :src="data.image" class="app-img-cart" alt="error">
@@ -49,7 +49,7 @@ export default {
    } ,
    components : {loading} ,
    computed : {
-    getShoes(){
+    dataSource(){
         return this.$store.getters['ShoesStore/getData']
     }
    } , 
