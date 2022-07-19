@@ -8,6 +8,7 @@ import sports from '../views/sports'
 import cart from '../views/cart'
 import singleShoes from '../components/singleComponent/singleShoes'
 import singleJacket from '../components/singleComponent/singleJacket'
+import singleHats from '../components/singleComponent/singleHats'
 const routes = [
   {
     path: '/',
@@ -38,6 +39,11 @@ const routes = [
     path: '/hats',
     name: 'hats',
     component: hats
+  },
+  {
+    path: '/hats/:id',
+    name: 'singleHats',
+    component: singleHats
   },
   {
     path: '/pants',
