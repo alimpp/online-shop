@@ -1,12 +1,13 @@
 <template>
   <div class="hats">
-    <h1>hats</h1>
+    <dataHats/>
   </div>
 </template>
 
 <script>
+import dataHats from '../components/dataComponent/dataHats.vue'
 export default {
-
+   components : {dataHats}
 }
 </script>
 

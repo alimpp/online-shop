@@ -1,12 +1,13 @@
 <template>
   <div class="sports">
-    <h1>sports</h1>
+    <dataSports/>
   </div>
 </template>
 
 <script>
+import dataSports from '../components/dataComponent/dataSports.vue'
 export default {
-
+   components : {dataSports}
 }
 </script>
 

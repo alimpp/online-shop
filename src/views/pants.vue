@@ -1,13 +1,14 @@
 <template>
   <div class="pants">
-    <h1>pants</h1>
+    <dataPants/>
   </div>
 </template>
 
 <script>
+import dataPants from '../components/dataComponent/dataPants.vue'
 export default {
-
-}
+   components : {dataPants}
+} 
 </script>
 
 <style>
