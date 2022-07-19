@@ -9,6 +9,7 @@ import cart from '../views/cart'
 import singleShoes from '../components/singleComponent/singleShoes'
 import singleJacket from '../components/singleComponent/singleJacket'
 import singleHats from '../components/singleComponent/singleHats'
+import singlePants from '../components/singleComponent/singlePants'
 const routes = [
   {
     path: '/',
@@ -49,6 +50,11 @@ const routes = [
     path: '/pants',
     name: 'pants',
     component: pants
+  },
+  {
+    path: '/pants/:id',
+    name: 'singlePants',
+    component: singlePants
   },
   {
     path: '/sports',
