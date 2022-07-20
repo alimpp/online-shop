@@ -19,8 +19,9 @@
             <i class="bi bi-star-fill" style="color:yellow;"></i>
             <i class="bi bi-star-fill" style="color:yellow;"></i>
           </div>
-          <div>
+          <div class="">
             <button class="app-btn-blue mt-2" @click="addToCart(singleShoes)">Add To Cart</button>
+            <button class="app-btn-yellow mt-2 mx-2" @click="back">Back To Shoes</button>
           </div>
         </div>
       </div>
@@ -64,6 +65,9 @@ export default {
       } , 
       addToCart(id){
         return this.$store.dispatch('CartStore/addToCart' , id)
+      } , 
+      back(){
+        return this.$router.push('/shoes')
       }
     }
 }
