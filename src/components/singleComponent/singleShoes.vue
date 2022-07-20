@@ -19,7 +19,7 @@
             <i class="bi bi-star-fill" style="color:yellow;"></i>
             <i class="bi bi-star-fill" style="color:yellow;"></i>
           </div>
-          <div class="">
+          <div>
             <button class="app-btn-blue mt-2" @click="addToCart(singleShoes)">Add To Cart</button>
             <button class="app-btn-yellow mt-2 mx-2" @click="back">Back To Shoes</button>
           </div>
