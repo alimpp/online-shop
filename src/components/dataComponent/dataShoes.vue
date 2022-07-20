@@ -1,7 +1,7 @@
 <template>
   <div class="dataShoes">
      <div class="container">
-      <div class="row app-flex-justify-content" v-if="!loading">
+      <div class="row app-flex-justify-content opa-anim" v-if="!loading">
             <div class="col-lg-10 my-3">
                 <input type="text" class="form-control" placeholder="Search Product" v-model="search">
             </div>
