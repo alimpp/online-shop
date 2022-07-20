@@ -21,6 +21,7 @@
           </div>
           <div>
             <button class="app-btn-blue mt-2" @click="addToCart(singlePants)">Add To Cart</button>
+            <button class="app-btn-yellow mt-2 mx-2" @click="back">Back To Pants</button>
           </div>
         </div>
       </div>
@@ -64,6 +65,9 @@ export default {
       } , 
       addToCart(id){
         return this.$store.dispatch('CartStore/addToCart' , id)
+      } , 
+      back(){
+        return this.$router.push('/pants')
       }
     }
 }

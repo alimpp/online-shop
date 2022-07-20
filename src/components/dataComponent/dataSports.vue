@@ -1,9 +1,14 @@
 <template>
   <div class="dataSports">
      <div class="container">
+       <div class="row app-flex-justify-content opa-anim" v-if="!loading">
+            <div class="col-lg-10 my-3">
+                <input type="text" class="form-control" placeholder="Search Product" v-model="search">
+            </div>
+      </div>
         <loading v-if="loading"/>
         <div v-else class="app-flex-wrap app-flex-justify-content opa-anim"  style="width:100%;">
-        <div class="app-cart my-2 mx-2 pointer" v-for="data in dataSource" :key="data.id">
+        <div class="app-cart my-2 mx-2 pointer opa-anim" v-for="data in dataSource" :key="data.id">
            <router-link :to="`/sports/${data.id}`" class="app-flex-justify-content link">
                 <div class="app-cart-img">
                 <img :src="data.image" class="app-img-cart" alt="error">
@@ -38,7 +43,8 @@ import loading from '../loading.vue'
 export default {
     data(){
         return{
-          loading : false
+          loading : false , 
+          search : ''
         }
     } ,
    mounted(){
@@ -50,7 +56,10 @@ export default {
    components : {loading} ,
    computed : {
     dataSource(){
-        return this.$store.getters['SportsStore/getData']
+        const products = this.$store.getters['SportsStore/getData']
+        return products.filter(product => {
+          return product.name.match(this.search)
+        })
     }
    } , 
    methods : {
