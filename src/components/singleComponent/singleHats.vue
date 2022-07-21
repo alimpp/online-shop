@@ -3,7 +3,7 @@
     <div class="container" style="height: 95vh;">
       <div class="row mt-5">
         <div class="col-lg-6 app-flex-justify-content">
-          <img :src="singleHats.image" alt="Error" style="width:80%; height:330px; border-radius:5px;">
+          <img :src="singleHats.image" alt="Error" style="width:70%; height:330px; border-radius:5px;">
         </div>
         <div class="col-lg-6 app-flex-column app-flex-justify-content px-5 mt-2">
           <span class="app-text-size-x app-light-color">Product Name</span>
