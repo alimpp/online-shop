@@ -31,8 +31,8 @@
                     <button class="app-btn-blue mt-2" @click="addToCart(data)">Add To Cart</button>
                     </div>
                 </div>
-       
         </div>
+        <coreFooter/>
       </div>
      </div>
   </div>
@@ -40,6 +40,7 @@
 
 <script>
 import loading from '../loading.vue'
+import coreFooter from '../coreFooter.vue'
 export default {
     data(){
         return{
@@ -53,7 +54,7 @@ export default {
         this.loading = false
      } , 2000)
    } ,
-   components : {loading} ,
+   components : {loading , coreFooter} ,
    computed : {
     dataSource(){
         const products = this.$store.getters['JacketsStore/getData']

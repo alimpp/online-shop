@@ -34,14 +34,16 @@
          <span class="app-text-size-z app-light-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga iste ducimus doloribus ut odit recusandae quaerat sapiente consectetur, eveniet maiores voluptatibus quia earum nihil harum. Dolorum libero aperiam architecto nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto ducimus obcaecati porro ab minima a, velit est illo cumque ad optio adipisci odit dolorum. Aut repellendus molestiae nobis atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia molestias quasi corrupti perspiciatis ipsam maxime amet numquam, illo ab, eos eveniet possimus iure consequatur adipisci soluta alias autem perferendis.</span>
       </div>
       <comments v-if="comments"/>
+      <coreFooter/>
     </div>
   </div>
 </template>
 
 <script>
 import comments from '../comments.vue'
+import coreFooter from '../coreFooter'
 export default {
-    components : {comments} ,
+    components : {comments , coreFooter} ,
     data(){
       return{
         pants : [] , 

@@ -21,19 +21,22 @@
             </div>
         </div>
       </div>
-      <div class="d-flex app-flex-justify-content my-3" style="border-top:1px solid #fafafa;">
+      <div class="d-flex app-flex-justify-content mt-3">
            <div>
             <button class="app-btn-red mt-2" @click="clearCart">Clear Cart</button>
            </div>
             <span class="app-text-size-y app-light-color px-2 pt-3">Total Price</span>
             <span class="app-text-size-y app-light-color px-2 pt-3">{{totalPrice}} $</span>
       </div>
+      <coreFooter/>
     </div>
   </div>
 </template>
 
 <script>
+import coreFooter from '../coreFooter.vue'
 export default {
+   components : {coreFooter} ,
    computed : {
     getCart(){
         return this.$store.getters['CartStore/getCart']
