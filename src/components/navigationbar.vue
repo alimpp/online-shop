@@ -26,9 +26,6 @@
          <li class="nav-item">
           <router-link to="/sports" class="link mx-2 py-1 app-light-color">Sports</router-link>
         </li>
-         <li class="nav-item">
-         
-        </li>
       </ul>
       <form class="d-flex">
        <div> <router-link to="/cart" class="link"><i class="bi bi-bag-plus-fill app-light-color"  style="font-size:30px;"></i></router-link></div>
@@ -41,9 +38,7 @@
 </template>
 
 <script>
-import coreCart from './coreCart.vue'
 export default {
-  components : {coreCart} ,
   computed : {
     getCount(){
       return this.$store.getters['CartStore/getCount']
